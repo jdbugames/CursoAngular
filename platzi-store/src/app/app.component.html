@@ -2,7 +2,22 @@
 {{ title }}
 
 <div *ngIf="title === 'Juan'">
-  este es un div
+  este es Juan
+</div>
+
+<div *ngIf="title === 'David'">
+  este es David
+</div>
+
+<div *ngIf="title === 'Barrera'">
+  este es Barrera
+</div>
+
+<div [ngSwitch]="title">
+  <p *ngSwitchCase="'Juan'">este es Juan</p>
+  <p *ngSwitchCase="'David'">Este es David</p>
+  <p *ngSwitchCase="'Barrera'">Este es Barrera</p>
+  <p *ngSwitchDefault>no hay match</p>
 </div>
 
 <button (click)="addItem()">Add item</button>
@@ -16,7 +31,5 @@
 </ul>
 
 <div *ngFor="let product of products">
-  {{ product.title }}
-  <img [src]="product.image" alt="">
-  {{ product.price }}
+  <app-product (productClicked)="clickProduct($event)" [product]="product"></app-product>
 </div>
