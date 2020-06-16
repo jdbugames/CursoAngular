@@ -12,6 +12,10 @@ export class AppComponent {
 
   items = ['Juan', 'David', 'Barrera'];
 
+  objeto = {};
+
+  power = 10;
+
   products: Product[] = [
     {
       id: '1',
@@ -44,14 +48,14 @@ export class AppComponent {
     {
       id: '5',
       image: 'assets/images/stickers1.png',
-      title: 'Camiseta',
+      title: 'Stickers1',
       price: 80000,
       description: 'bla bla bla bla bla'
     },
     {
       id: '6',
       image: 'assets/images/stickers2.png',
-      title: 'Camiseta',
+      title: 'Stickers2',
       price: 80000,
       description: 'bla bla bla bla bla'
     },
