@@ -1,1 +1,36 @@
-<p>footer works!</p>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="box">
+                    <h3>Productos</h3>
+                    <ul>
+                        <li>
+                            <a routerLink="/products" [queryParams]="{ type: 'news' }">Nuevos Productos</a>
+                        </li>
+                        <li>
+                            <a routerLink="/products" [queryParams]="{ type: 'news' }">En Oferta</a>
+                        </li>
+                        <li>
+                            <a routerLink="/products" [queryParams]="{ type: 'news' }">Últimos Productos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="box">
+                    <h3>Acerca de PlatziStore</h3>
+                    <ul>
+                        <li><a routerLink="/about-us">Sobre nosotros</a></li>
+                        <li><a routerLink="/about-us">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="box">
+                    <h3>Contacto</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
