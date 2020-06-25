@@ -6,7 +6,6 @@ import { NavComponent } from './components/nav/nav.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TableComponent } from './components/table/table.component';
 
-
 const routes: Routes = [
   {
     path: '',
@@ -23,7 +22,7 @@ const routes: Routes = [
       {
         path: 'table',
         component: TableComponent
-      }
+      },
     ]
   }
 ];

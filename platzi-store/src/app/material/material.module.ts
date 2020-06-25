@@ -22,7 +22,6 @@ import { MatRadioModule } from '@angular/material/radio';
     MatInputModule,
     MatSelectModule,
     MatRadioModule,
-
   ],
   exports: [
     MatButtonModule,
@@ -32,7 +31,7 @@ import { MatRadioModule } from '@angular/material/radio';
     MatCardModule,
     MatInputModule,
     MatSelectModule,
-    MatRadioModule
+    MatRadioModule,
   ]
 })
 export class MaterialModule { }
